@@ -12,16 +12,16 @@ Ans:
 I am going to write a Ruby script that prints all the user names and their home directories within the Linux system.
 
 Now where do we have all the user names and their home directories in Linux? They will be stored in the file path /etc/passwd here are the contents of the file.
-Now we use cat command to view the contents of the file path /etc/passwd.
+Now we use the cat command to view the contents of the file path /etc/passwd.
 
-![Screenshot 2024-03-08 204132](https://github.com/jastijayakrishna/Assessment/assets/20278464/c0010632-fd55-406f-bc24-ffe44fee51a3)
+![](https://github.com/Jaya-Krishna-Jasti/Asses-gitlab/blob/main/images/12.png?raw=true)
 
 
  
 
 The /etc/passwd is a plain text file in the Unix operating system that has information about user's accounts. Each line in the file represents a user and has several fields separated by a colon ‘:’. The fields are: 
 
-![Screenshot 2024-03-13 151517](https://github.com/jastijayakrishna/Assessment/assets/20278464/701a2790-21b7-4df1-ba81-537b62ccbce1)
+![](https://github.com/Jaya-Krishna-Jasti/Asses-gitlab/blob/main/images/15.png?raw=true)
 
 ---
 
@@ -33,7 +33,7 @@ In the above image, we can see
 
 **Index 2**: A unique user ID is assigned to each user.
 
-**Index 3**: This is the group ID number which corresponds to a group in ‘/etc/group’ file.
+**Index 3**: This is the group ID number that corresponds to a group in ‘/etc/group’ file.
 
 **Index 4**: This is used for user information or any other information.
 
@@ -43,7 +43,7 @@ In the above image, we can see
 
 ---
 
-Now we can see the username is present in the 0th index and the home directory is present in the 5th index. We are going to write a ruby script to open the file and loop all the contents in a variable named file
+Now we can see the username is present in the 0th index and the home directory in the 5th index. We are going to write a ruby script to open the file and loop all the contents in a variable named file
 
 				File.open('etc/passwd/').each do |line| 
 
@@ -68,12 +68,10 @@ Now the whole code looks like
 					home_directory = word[5]
 					puts "#{username}: #{home_directory}"
 				end
-![Screenshot 2024-03-08 210416](https://github.com/jastijayakrishna/Assessment/assets/20278464/ac45616a-aa80-47f2-ba35-8125068fe986)
-
+![](https://github.com/Jaya-Krishna-Jasti/Asses-gitlab/blob/main/images/13.png?raw=true)
 ## Output:
 
-![Screenshot 2024-03-08 210540](https://github.com/jastijayakrishna/Assessment/assets/20278464/d07599f4-3848-492e-a7c9-371cc7087d42)
-
+![](https://github.com/Jaya-Krishna-Jasti/Asses-gitlab/blob/main/images/14.png?raw=true)
 
 ## Sources: 
 
@@ -83,8 +81,7 @@ Tools: ubuntu for testing and getting the output.
 
 # 2. Study the Git commit graph shown below. What sequence of Git commands could have resulted in this commit graph?
 
-   ![Screenshot 2024-03-14 200926](https://github.com/jastijayakrishna/Assessment/assets/20278464/9e752ba0-455c-4f29-800c-942ddb0ca99f)
-
+ ![](https://github.com/Jaya-Krishna-Jasti/Asses-gitlab/blob/main/images/16.png?raw=true)
 Ans:
 
 Now to get the desired commit graph we have to follow these git commands.
@@ -106,9 +103,9 @@ The  “ -m “ represents the message which is “First commit”.
                                         
 				git commit -m “First commit”
 
-The commit-graph after the first commit looks like this
+The commit graph after the first commit looks like this
 
-![Screenshot 2024-03-08 123833](https://github.com/jastijayakrishna/Assessment/assets/20278464/13ae3ec9-4468-40f5-a626-e272eb2347a7)
+![](https://github.com/Jaya-Krishna-Jasti/Asses-gitlab/blob/main/images/7.png?raw=true)
 
       
 Now we are going to make some more changes in a file and we will be staging it for the second commit
@@ -119,9 +116,9 @@ Now we are going to do the second commit.
                                         
 				git commit -m “Second commit”
 
-The commit graph after the Second commit looks like this
+The commit-graph after the Second commit looks like this
 
-![Screenshot 2024-03-08 123843](https://github.com/jastijayakrishna/Assessment/assets/20278464/516d7a20-50e6-49e6-81bd-844732db930b)
+![Screenshot](https://github.com/Jaya-Krishna-Jasti/Asses-gitlab/blob/main/images/8.png?raw=true)
 
 
 Now  we are going to create a branch named feature branch. A branch is a separate line of development within a repository that allows you to work independently without affecting the main line. We generally use a branch 
@@ -143,10 +140,10 @@ Now we are going to commit it with the message “Awesome feature”
                                         
 				git commit -m “awesome feature”
 
-The commit-graph after committing the awesome-feature looks like this
+The commit-graph after committing the awesome feature looks like this
 
 
-![Screenshot 2024-03-08 123855](https://github.com/jastijayakrishna/Assessment/assets/20278464/2b33e6af-1db6-4cc5-a26c-9c364e9debde)
+![Screenshot](https://github.com/Jaya-Krishna-Jasti/Asses-gitlab/blob/main/images/9.png?raw=true)
 
      
 Now we are going to move back to the master or main branch by using the command checkout.
@@ -161,17 +158,17 @@ Now we are going to commit it with the message “Third commit”.
                                         
 				git commit -m “Third commit”
 
-The commit-graph after the Third commit looks like this
+The commit graph after the Third commit looks like this
 
 
-![Screenshot 2024-03-08 123906](https://github.com/jastijayakrishna/Assessment/assets/20278464/5e0605a6-7c35-4538-b78d-0164d9430150)
+![Screenshot](https://github.com/Jaya-Krishna-Jasti/Asses-gitlab/blob/main/images/10.png?raw=true)
 
      
 We are going to merge the feature branch with  the master branch. 
                                         
 				git merge feature-branch
 
-This merge happened by using 'ort' strategy. ort stands for Ostensibly Recursive twin which is similar to the recursive strategy ( it works recursively finding a common ancestor i.e., basecommit between the branches and then applying the changes from each branch on top of that base. The difference between ort and recursive is mainly memory usage and performance.
+This merge happened by using the 'ort' strategy. ort stands for Ostensibly Recursive twin which is similar to the recursive strategy ( it works recursively finding a common ancestor i.e., basecommit between the branches and then applying the changes from each branch on top of that base. The difference between ort and recursive is mainly memory usage and performance.
      
 Now we are going to make some more changes in the file and stage it.
 
@@ -185,14 +182,14 @@ Now we are going to commit it with the message “Fourth commit”.
 
 ## The resulting commit graph looks like this
 
-![Screenshot 2024-03-08 123816](https://github.com/jastijayakrishna/Assessment/assets/20278464/a9dac041-1253-45a0-bc0a-08108a305da5)
+![Screenshot](https://github.com/Jaya-Krishna-Jasti/Asses-gitlab/blob/main/images/6.png?raw=true)
 
 **Sources:**
 
-I used AI tools to learn about ort strategy and gitkraken to get the final commit-graph.
+I used AI tools to learn about ort strategy and gitkraken to get the final commit graph.
 
 
-# 3. Write a brief blog post for GitLab that explains what Git is and what it can do for you?
+# 3. Write a brief blog post for GitLab that explains what Git is and what it can do for you.
 
 As a developer, I've learned to value Git's amazing power and versatility for code management. Git is a popular version control system that has transformed how developers work together and manage projects. In this blog 
 post, I'll discuss my experiences with Git and how it has evolved into a vital tool in any development process.
