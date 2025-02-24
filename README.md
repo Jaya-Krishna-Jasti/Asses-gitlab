@@ -1,4 +1,4 @@
-# 1. Write a Ruby or Bash script that will print usernames of all users on a Linux system together with their home directories. 
+# 1. Write a Ruby or Bash script that will print the usernames of all users on a Linux system together with their home directories. 
 Here&#39;s some example output:
 
 		gitlab:/home/gitlab
@@ -97,7 +97,7 @@ modifications to include in the next commit.
 
 				git add .
 					 
-Now we are going to commit the changes into git. Commit means git takes changes that are in the staging area and create a new “snapshot” of your repository at that point in time. This snapshot is added to the repository history. 
+Now we are going to commit the changes into git. Commit means git takes changes that are in the staging area and create a new “snapshot” of your repository then. This snapshot is added to the repository history. 
 
 The  “ -m “ represents the message which is “First commit”.
                                         
